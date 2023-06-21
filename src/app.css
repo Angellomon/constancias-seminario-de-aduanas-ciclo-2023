@@ -39,23 +39,33 @@
 }
 
 :root {
+  --text-white: white;
   --main-green-solid: rgba(56, 130, 72, 1);
   --main-green-transparent: rgba(56, 130, 72, 0.69);
-  --background-color-dark: var(var(--main-green));
+  --background-color-dark: var(--main-green);
   --main-gradient: linear-gradient(
     90deg,
-    var(--background-color-dark) 50%,
-    var(--main-green-transparents) 100%
+    var(--main-green-solid) 50%,
+    var(--main-green-transparent) 100%
   );
 
   font-family: "Montserrat Regular";
 
-  background-image: url("/public/img/fondo-aviones_xl.jpg");
+  background-image: url("/img/fondo-aviones_xl.jpg");
   background-size: cover;
+}
+
+header {
+  background-image: url("/img/fondo-cargo_xl.jpg");
+  background-size: cover;
+  background-position: center bottom;
 }
 
 h1 {
   font-family: "Montserrat BoldItalic";
+  font-size: 3.5rem;
+
+  color: var(--text-white);
 }
 
 h2 {
@@ -66,14 +76,28 @@ p {
   font-family: "Montserrat SemiBold";
 }
 
+/* mobile */
 @media screen and (max-width: 600px) {
   :root {
     background-image: url("/public/img/fondo-aviones_md.jpg");
   }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  header {
+    background-image: url("/img/fondo-cargo_md.jpg");
+  }
 }
 
+/* laptop/desktop */
 @media screen and (min-width: 600px) and (max-width: 1920px) {
   :root {
     background-image: url("/img/fondo-aviones_lg.jpg");
+  }
+
+  header {
+    background-image: url("/img/fondo-cargo_lg.jpg");
   }
 }
