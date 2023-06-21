@@ -3,7 +3,12 @@
     "composite": true,
     "skipLibCheck": true,
     "module": "ESNext",
-    "moduleResolution": "bundler"
+    "moduleResolution": "bundler",
+    "paths": {
+      "$lib": ["./src/lib"],
+      "$components": ["./src/lib/components"],
+      "$pages": ["./src/pages"]
+    }
   },
   "include": ["vite.config.ts"]
 }
