@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { EventSelector } from "../lib/components/content";
-  import MainFooter from "../lib/components/footer/main-footer.svelte";
-  import { HeaderEventSelect } from "../lib/components/headers";
+  import { EventSelector } from "@components/content";
+  import MainFooter from "@components/footer/main-footer.svelte";
+  import { HeaderEventSelect } from "@components/headers";
 </script>
 
 <main>

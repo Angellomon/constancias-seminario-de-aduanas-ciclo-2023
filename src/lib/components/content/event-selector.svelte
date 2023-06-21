@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { events } from "../../store";
+  import { events } from "@lib/store";
 
   function handleEventClick(id: string) {
     console.log(id);

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { logosSources } from "../../store";
+  import { logosSources } from "@lib/store";
 </script>
 
 <footer>

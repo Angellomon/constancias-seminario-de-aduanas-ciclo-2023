@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { MainLogoTransparent } from "../img";
+  import { MainLogoTransparent } from "@components/img";
 </script>
 
 <header>

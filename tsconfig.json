@@ -15,9 +15,12 @@
     "checkJs": true,
     "isolatedModules": true,
     "paths": {
-      "$lib": ["./src/lib"],
-      "$components": ["./src/lib/components"],
-      "$pages": ["./src/pages"]
+      "@lib/*": ["./src/lib/*"],
+      "@components/*": ["./src/lib/components/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@lib": ["./src/lib"],
+      "@components": ["./src/lib/components"],
+      "@pages": ["./src/pages"]
     }
   },
   "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"],
