@@ -74,6 +74,6 @@ p {
 
 @media screen and (min-width: 600px) and (max-width: 1920px) {
   :root {
-    background-image: url("/public/img/fondo-aviones_lg.jpg");
+    background-image: url("/img/fondo-aviones_lg.jpg");
   }
 }
