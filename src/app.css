@@ -39,7 +39,19 @@
 }
 
 :root {
+  --main-green-solid: rgba(56, 130, 72, 1);
+  --main-green-transparent: rgba(56, 130, 72, 0.69);
+  --background-color-dark: var(var(--main-green));
+  --main-gradient: linear-gradient(
+    90deg,
+    var(--background-color-dark) 50%,
+    var(--main-green-transparents) 100%
+  );
+
   font-family: "Montserrat Regular";
+
+  background-image: url("/public/img/fondo-aviones_xl.jpg");
+  background-size: cover;
 }
 
 h1 {
@@ -52,4 +64,16 @@ h2 {
 
 p {
   font-family: "Montserrat SemiBold";
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    background-image: url("/public/img/fondo-aviones_md.jpg");
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1920px) {
+  :root {
+    background-image: url("/public/img/fondo-aviones_lg.jpg");
+  }
 }
