@@ -40,6 +40,7 @@
 
 :root {
   --text-white: white;
+  --text-dark: #285b32;
   --main-green-solid: rgba(56, 130, 72, 1);
   --main-green-transparent: rgba(56, 130, 72, 0.69);
   --background-color-dark: var(--main-green);
@@ -73,7 +74,30 @@ h2 {
 }
 
 p {
-  font-family: "Montserrat SemiBold";
+  font-family: "Montserrat Medium";
+  color: var(--text-dark);
+}
+
+b {
+  font-family: "Montserrat Bold";
+}
+
+button {
+  border: none;
+  border-radius: 50px;
+
+  background: none;
+  background-color: white;
+  background-image: var(--main-gradient);
+
+  color: var(--text-white);
+
+  font-family: "Montserrat SemiBoldItalic";
+  font-size: 2rem;
+
+  padding: 1vh 5vw;
+
+  cursor: pointer;
 }
 
 /* mobile */
