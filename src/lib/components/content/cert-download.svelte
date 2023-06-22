@@ -30,7 +30,7 @@
   section {
     height: 60vh;
 
-    padding-top: 2vh;
+    /* padding-top: 2vh; */
 
     display: flex;
     flex-direction: column;
@@ -83,6 +83,30 @@
   @media screen and (max-width: 375px) {
     p {
       height: 3rem;
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    h2 {
+      font-size: 3rem;
+    }
+
+    input {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 2rem;
+      height: 2.5rem;
+    }
+
+    p.second {
+      font-size: 3rem;
+      height: 2.5rem;
+    }
+
+    div.message {
+      width: 60vw;
     }
   }
 </style>

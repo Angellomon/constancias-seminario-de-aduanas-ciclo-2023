@@ -69,4 +69,10 @@
     justify-content: flex-end;
     align-items: center;
   }
+
+  @media screen and (min-width: 1600px) {
+    h1 {
+      font-size: 5rem;
+    }
+  }
 </style>
