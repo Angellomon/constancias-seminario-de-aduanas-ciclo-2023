@@ -5,13 +5,13 @@
 
   export let params: any = {};
 
-  const id = params.eventId;
-  console.log(id);
+  const eventId = params.eventId;
+  console.log(eventId);
 </script>
 
 <main>
   <HeaderCertDownload />
-  <CertDownloadContent />
+  <CertDownloadContent {eventId} />
   <MainFooter />
 </main>
 
