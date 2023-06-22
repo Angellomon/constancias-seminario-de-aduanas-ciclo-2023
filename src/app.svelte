@@ -5,7 +5,7 @@
 
   const routes = {
     "/": EventSelectPage,
-    "/:eventId": EventCertDownloadPage,
+    "/event/:eventId": EventCertDownloadPage,
   };
 </script>
 

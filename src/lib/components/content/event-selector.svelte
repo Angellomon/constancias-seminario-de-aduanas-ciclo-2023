@@ -3,7 +3,7 @@
   import { push } from "svelte-spa-router";
 
   function handleEventClick(id: string) {
-    push(`/${id}`);
+    push(`/event/${id}`);
   }
 </script>
 
