@@ -70,7 +70,9 @@ h1 {
 }
 
 h2 {
-  font-family: "Montserrat SemiBoldItalic";
+  font-family: "Montserrat BoldItalic";
+  font-size: 1.7rem;
+  color: var(--text-dark);
 }
 
 p {
@@ -100,6 +102,40 @@ button {
   cursor: pointer;
 }
 
+input {
+  all: unset;
+
+  height: 100%;
+  width: 100%;
+
+  font-size: 1.5rem;
+
+  text-align: center;
+}
+
+label[for="email"] {
+  border: none;
+  border-radius: 50px;
+
+  background: none;
+  background-color: white;
+  background-image: var(--main-gradient);
+
+  color: var(--text-white);
+
+  font-family: "Montserrat SemiBoldItalic";
+
+  padding: 1vh 5vw;
+  padding-right: 1.9vw;
+
+  width: 40vw;
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* mobile */
 @media screen and (max-width: 600px) {
   :root {
@@ -112,6 +148,16 @@ button {
 
   header {
     background-image: url("/img/fondo-cargo_md.jpg");
+  }
+
+  label[for="email"] {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  input {
+    font-size: 1.2rem;
   }
 }
 
