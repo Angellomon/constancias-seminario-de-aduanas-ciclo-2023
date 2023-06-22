@@ -45,3 +45,7 @@ export const logosSources = readable([
     file: "/img/logo-comecarne.png",
   },
 ]);
+
+const _companyId = import.meta.env.VITE_COMPANY_ID || '""';
+
+export const companyId = readable(_companyId);
