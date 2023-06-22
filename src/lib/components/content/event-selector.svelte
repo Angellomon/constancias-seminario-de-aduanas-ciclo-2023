@@ -1,8 +1,9 @@
 <script lang="ts">
   import { events } from "@lib/store";
+  import { push } from "svelte-spa-router";
 
   function handleEventClick(id: string) {
-    console.log(id);
+    push(`/${id}`);
   }
 </script>
 
