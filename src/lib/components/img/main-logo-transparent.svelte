@@ -33,4 +33,13 @@
       top: 20%;
     }
   }
+
+  @media screen and (min-width: 1600px) {
+    img {
+      height: 3rem;
+
+      height: 35vh;
+      width: 35vh;
+    }
+  }
 </style>

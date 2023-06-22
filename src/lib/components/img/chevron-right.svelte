@@ -25,4 +25,11 @@
 
     cursor: pointer;
   }
+
+  @media screen and (min-width: 1600px) {
+    img {
+      height: 2.8rem;
+      width: 4rem;
+    }
+  }
 </style>
