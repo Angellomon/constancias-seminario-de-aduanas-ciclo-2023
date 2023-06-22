@@ -5,6 +5,7 @@
 <header>
   <div class="wrapper">
     <MainLogoTransparent />
+
     <div class="title">
       <h1>CONSTANCIAS</h1>
     </div>
