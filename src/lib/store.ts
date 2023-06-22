@@ -1,4 +1,4 @@
-import { readable } from "svelte/store";
+import { readable, writable } from "svelte/store";
 
 export const events = readable([
   {
@@ -46,6 +46,20 @@ export const logosSources = readable([
   },
 ]);
 
-const _companyId = import.meta.env.VITE_COMPANY_ID || '""';
+export const companyId = import.meta.env.VITE_COMPANY_ID;
 
-export const companyId = readable(_companyId);
+export const apiUrl = import.meta.env.VITE_API_URL || '""';
+
+export const assistantsUrl = import.meta.env.VITE_ASSISTANTS_URL;
+
+export const emailStatus = writable({
+  isError: false,
+  isLoading: false,
+  isNotFound: false,
+  isInvalidReq: false,
+  isServerError: false,
+  isValid: false,
+  isValidating: false,
+});
+
+export let email = writable("");
