@@ -39,7 +39,7 @@
 
     background-color: white;
     background-image: var(--main-gradient);
-    border-radius: 100px;
+    border-radius: 10vh;
 
     padding: 2vh 5vw;
 
