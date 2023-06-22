@@ -57,6 +57,12 @@
     font-size: 1.5rem;
   }
 
+  @media screen and (min-width: 768px) {
+    div.message {
+      width: 40vw;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     p {
       height: 2.2rem;
