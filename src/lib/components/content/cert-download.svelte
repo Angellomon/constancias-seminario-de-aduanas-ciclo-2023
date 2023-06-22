@@ -1,7 +1,8 @@
 <script lang="ts">
-  import { email } from "@lib/store";
+  import { email, emailStatus } from "@lib/store";
   import { ChevronRight } from "../img";
   import { downloadCertificate } from "@lib/utils";
+  import Spinner from "../img/spinner.svelte";
 
   export let eventId: string;
 
@@ -15,7 +16,11 @@
 
   <label for="email">
     <input bind:value={$email} name="email" type="email" />
-    <ChevronRight on:click={handleEmailSubmit} />
+    {#if $emailStatus.isLoading}
+      <Spinner />
+    {:else}
+      <ChevronRight on:click={handleEmailSubmit} />
+    {/if}
   </label>
 
   <div class="message">
