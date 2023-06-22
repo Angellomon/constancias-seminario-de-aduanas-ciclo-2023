@@ -1,13 +1,21 @@
-<script>
+<script lang="ts">
+  import { email } from "@lib/store";
   import { ChevronRight } from "../img";
+  import { downloadCertificate } from "@lib/utils";
+
+  export let eventId: string;
+
+  async function handleEmailSubmit() {
+    await downloadCertificate($email, eventId);
+  }
 </script>
 
 <section>
   <h2>Correo Electrónico</h2>
 
   <label for="email">
-    <input name="email" type="email" />
-    <ChevronRight />
+    <input bind:value={$email} name="email" type="email" />
+    <ChevronRight on:click={handleEmailSubmit} />
   </label>
 
   <div class="message">
@@ -57,7 +65,7 @@
     font-size: 1.5rem;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     div.message {
       width: 40vw;
     }
