@@ -54,4 +54,14 @@
   /* button:first-of-type {
     margin-top: 0;
   } */
+
+  @media screen and (min-width: 1600px) {
+    p {
+      font-size: 3.5rem;
+    }
+
+    button {
+      font-size: 3.5rem;
+    }
+  }
 </style>

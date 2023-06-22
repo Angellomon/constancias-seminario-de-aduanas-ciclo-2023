@@ -89,4 +89,10 @@
       flex-direction: row;
     }
   }
+
+  @media screen and (min-width: 1600px) {
+    h1 {
+      font-size: 5.5rem;
+    }
+  }
 </style>
