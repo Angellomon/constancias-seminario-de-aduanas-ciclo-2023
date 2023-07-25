@@ -3,7 +3,11 @@ import { readable, writable } from "svelte/store";
 export const events = readable([
   {
     name: "JUNIO",
-    id: "qdxfw2lrot", // TODO: update event id [key]
+    id: "qdxfw2lrot",
+  },
+  {
+    name: "JULIO",
+    id: "c25djac2jo",
   },
 ]);
 
