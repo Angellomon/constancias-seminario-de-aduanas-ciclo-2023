@@ -21,6 +21,15 @@
 </section>
 
 <style>
+  div.events {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2ch;
+    align-items: center;
+    justify-content: center;
+  }
+
   div.wrapper {
     min-height: 35vh;
     height: 100%;
@@ -54,6 +63,12 @@
   /* button:first-of-type {
     margin-top: 0;
   } */
+
+  @media screen and (max-width: 700px) {
+    div.events {
+      gap: 1ch;
+    }
+  }
 
   @media screen and (min-width: 1600px) {
     p {
