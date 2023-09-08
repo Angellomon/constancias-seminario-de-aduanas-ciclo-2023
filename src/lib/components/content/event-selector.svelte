@@ -67,6 +67,12 @@
   @media screen and (max-width: 700px) {
     div.events {
       gap: 1ch;
+      flex-direction: column;
+    }
+
+    button {
+      margin-top: 2vh;
+      margin-bottom: 2vh;
     }
   }
 
