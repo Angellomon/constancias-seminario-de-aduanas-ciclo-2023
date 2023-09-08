@@ -9,6 +9,14 @@ export const events = readable([
     name: "JULIO",
     id: "c25djac2jo",
   },
+  {
+    name: "AGOSTO",
+    id: "klycifbll5",
+  },
+  {
+    name: "SEPTIEMBRE",
+    id: "x43lftsr13",
+  },
 ]);
 
 export const logosSources = readable([
